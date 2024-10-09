@@ -14,6 +14,7 @@ body {
 /* Common */
 :root {
     --primary-color: #1ebfc1;
+    --secon-color: #e0f7f6;
 }
 
 .content {
@@ -56,6 +57,7 @@ a {
     border-radius: 14px;
     background: var(--primary-color);
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    transition: all linear 0.15s;
 }
 
 .btn:hover {
@@ -64,10 +66,12 @@ a {
 
 /* Header */
 .header {
+    background-color: #fff;
     border-bottom: 1px solid #eee;
     padding-top: 44px;
     position: sticky;
     top: -44px;
+    z-index: 1;
 }
 
 .header-wrap {
@@ -150,4 +154,229 @@ a {
 .head-active-btn:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+/* Hero */
+.hero {
+    padding: 42px 0 79px;
+    background-color: #fff;
+}
+
+.hero-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-labe {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero .heading {
+    margin-top: 18px;
+}
+
+.hero-desc {
+    width: 374px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-top: 46px;
+}
+
+.hero-action {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero-play-video {
+    color: var(--primary-color);
+    width: 62px;
+    height: 62px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 18px;
+    margin-left: 50px;
+    transition: all linear 0.15s;
+}
+
+.hero-play-video:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    color: #fff;
+}
+
+.hero-pay-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-media {
+    background-color: var(--secon-color);
+    margin-left: auto;
+    position: relative;
+}
+
+.hero-media-image {
+}
+
+.hero-media-courses {
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    padding: 17px 25px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book {
+    width: 36px;
+    height: 40px;
+    background-color: #ff8282;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: relative;
+}
+
+.book-row {
+    width: 28px;
+    height: 4px;
+    border-radius: 99px;
+    background-color: #fff;
+    position: absolute;
+    left: 4px;
+    bottom: 8px;
+}
+
+.hero-media-label {
+    width: 55px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-media-courses .hero-media-label {
+    margin-left: 16px;
+}
+
+.hero-media-schedules {
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    left: -65px;
+    bottom: 46px;
+    padding: 16px 25px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedules-row {
+    width: 74px;
+    height: 6px;
+    margin-top: 16px;
+    border-radius: 99px;
+    background-color: #edf1f5;
+}
+
+.schedules-row + .schedules-row {
+    margin-top: 12px;
+}
+
+.schedules-row:last-child {
+    width: 26px;
+}
+
+.hero-media-schedules .hero-media-label {
+    margin: 0 auto;
+}
+
+.schedules-row-item {
+    background-color: #fb9899;
+    border-radius: 99px;
+}
+
+.schedules-row:nth-of-type(1) .schedules-row-item {
+    width: 50%;
+    height: 100%;
+}
+
+.schedules-row:nth-of-type(2) .schedules-row-item {
+    width: 70%;
+    height: 100%;
+}
+
+.schedules-row:nth-of-type(3) .schedules-row-item {
+    width: 45%;
+    height: 100%;
+}
+
+.hero-media-students {
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    padding: 17px 35px;
+}
+
+.hero-media-students .hero-media-label {
+    text-align: left;
+}
+
+.hero-users-sub {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero-user-item-avatar {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-user-item-avatar + .hero-user-item-avatar {
+    margin-left: -7px;
+}
+
+.hero-user-item-total {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: -7px;
 }
