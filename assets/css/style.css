@@ -9,12 +9,14 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
 }
 
 /* Common */
 :root {
     --primary-color: #1ebfc1;
     --secon-color: #e0f7f6;
+    --line-clamp: 2;
 }
 
 .content {
@@ -62,6 +64,25 @@ a {
 
 .btn:hover {
     opacity: 0.8;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.ba-cham {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line-clamp);
+    overflow: hidden;
+}
+
+.ba-cham.line-clamp-1 {
+    --line-clamp: 1;
+}
+
+.ba-cham.line-clamp-3 {
+    --line-clamp: 3;
 }
 
 /* Header */
@@ -169,6 +190,7 @@ a {
 
 .hero-content {
     width: 50%;
+    padding-right: 90px;
 }
 
 .hero-labe {
@@ -182,7 +204,7 @@ a {
 }
 
 .hero-desc {
-    width: 374px;
+    max-width: 374px;
     color: #9da6a5;
     font-size: 1.8rem;
     font-weight: 400;
