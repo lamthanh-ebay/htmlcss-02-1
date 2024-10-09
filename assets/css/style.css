@@ -190,7 +190,7 @@ a {
 
 .hero-content {
     width: 50%;
-    padding-right: 90px;
+    margin-right: 136px;
 }
 
 .hero-labe {
@@ -204,7 +204,7 @@ a {
 }
 
 .hero-desc {
-    max-width: 374px;
+    max-width: 370px;
     color: #9da6a5;
     font-size: 1.8rem;
     font-weight: 400;
