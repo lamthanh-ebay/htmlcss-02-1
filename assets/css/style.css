@@ -584,6 +584,9 @@ a {
     cursor: pointer;
 }
 
+.popular-item-heading a {
+}
+
 .popular-fee {
     color: #767e7e;
     font-size: 1.6rem;
