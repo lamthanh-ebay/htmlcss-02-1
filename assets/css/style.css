@@ -254,6 +254,9 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 18px;
     margin-left: 50px;
     transition: all linear 0.15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-play-video:hover {
@@ -730,6 +733,7 @@ a {
     border: none;
     background-color: var(--primary-color);
     color: #fff;
+    cursor: pointer;
 }
 
 .feedback-btn + .feedback-btn {
