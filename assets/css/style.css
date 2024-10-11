@@ -4,12 +4,12 @@
 
 html {
     font-size: 62.5%;
+    text-rendering: optimizeSpeed;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
-    text-rendering: optimizeSpeed;
 }
 
 /* Common */
@@ -27,7 +27,6 @@ body {
 
 a {
     text-decoration: none;
-    user-select: none;
 }
 
 .heading {
@@ -143,6 +142,7 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     padding: 8px 12px;
+    user-select: none;
 }
 
 .nav-link:hover {
@@ -173,6 +173,7 @@ a {
     color: #494949;
     font-size: 1.6rem;
     font-weight: 400;
+    user-select: none;
 }
 
 .head-active-link:hover {
@@ -634,6 +635,7 @@ a {
     width: 73.7%;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .subscribe-item {
@@ -825,4 +827,112 @@ a {
     font-weight: 600;
     margin-right: 154px;
     margin-left: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.footer-wrap {
+    margin-top: 80px;
+}
+
+.footer-wrap .row {
+    display: flex;
+}
+
+.footer-wrap .row .column:nth-of-type(1) {
+    width: 23.16%;
+}
+
+.footer-wrap .row .column:nth-of-type(2) {
+    width: 20.1%;
+}
+
+.footer-wrap .row .column:nth-of-type(3) {
+    width: 22%;
+}
+
+.footer-wrap .row .column:nth-of-type(4) {
+    width: 25.12%;
+}
+
+.footer-wrap .row .column:nth-of-type(5) {
+    width: 9.62%;
+}
+
+.footer-logo-link {
+}
+
+.footer-logo {
+    width: 127px;
+    height: 37px;
+}
+
+.footer-tittle {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer-list,
+.footer-social-list {
+    margin-top: 25px;
+}
+
+.footer-item {
+}
+
+.footer-item + .footer-item {
+    margin-top: 18px;
+}
+
+.footer-item-link,
+.footer-social-item-link {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer-item-link {
+    padding: 8px 8px 8px 0;
+}
+
+.footer-social-item {
+}
+
+/* .footer-social-item + .footer-social-item {
+    margin-top: 18px;
+} */
+
+.footer-social-item-link {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.footer-social-item:first-child .footer-social-item-link {
+    padding-top: 0;
+}
+
+.footer-social-icon {
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.copyright p {
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
