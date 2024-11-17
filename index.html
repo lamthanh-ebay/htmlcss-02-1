@@ -35,6 +35,9 @@
         />
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- Header -->
@@ -78,7 +81,7 @@
                 <div class="content">
                     <div class="hero-wrap">
                         <!-- Hero Content -->
-                        <div class="hero-content">
+                        <div class="hero-content" data-aos="fade-right">
                             <p class="hero-top-label top-label break-all ba-cham line-clamp-1">
                                 😎 EASY LEAENING PLATFORM
                             </p>
@@ -108,7 +111,7 @@
                         </div>
 
                         <!-- Hero Media -->
-                        <div class="hero-media">
+                        <div class="hero-media" data-aos="zoom-in">
                             <img
                                 src="./assets/img/hero-media-image.png"
                                 alt="Words learner come here."
@@ -175,7 +178,7 @@
             <div class="features">
                 <div class="content">
                     <div class="features-wrap">
-                        <div class="features-top">
+                        <div class="features-top" data-aos="fade-up">
                             <div class="features-top-label top-label">F E A T U R E S</div>
                             <h2 class="features-top-heading heading lv2 ba-cham">
                                 We are providing suitable features for students.
@@ -187,7 +190,7 @@
                         </div>
                         <div class="features-body">
                             <div class="row">
-                                <div class="column">
+                                <div class="column" data-aos="fade-up">
                                     <img
                                         src="./assets/icon/feature-icon-1.svg"
                                         alt="Live Class"
@@ -199,7 +202,7 @@
                                     </p>
                                 </div>
 
-                                <div class="column">
+                                <div class="column" data-aos="fade-up">
                                     <img
                                         src="./assets/icon/feature-icon-2.svg"
                                         alt="Live Class"
@@ -211,7 +214,7 @@
                                     </p>
                                 </div>
 
-                                <div class="column">
+                                <div class="column" data-aos="fade-up">
                                     <img
                                         src="./assets/icon/feature-icon-3.svg"
                                         alt="Live Class"
@@ -232,7 +235,7 @@
             <div class="popular">
                 <div class="content">
                     <div class="popular-wrap">
-                        <div class="popular-top">
+                        <div class="popular-top" data-aos="fade-up">
                             <p class="popular-top-label top-label">C O U R S E S</p>
                             <h2 class="popular-top-heading heading lv2">Popular Courses</h2>
                             <div class="popular-top-row">
@@ -246,7 +249,7 @@
                         <div class="popular-body">
                             <div class="popular-list">
                                 <!-- popular item 1 -->
-                                <div class="popular-item">
+                                <div class="popular-item" data-aos="fade-right">
                                     <a href="#!">
                                         <img
                                             loading="lazy"
@@ -273,7 +276,7 @@
                                 </div>
 
                                 <!-- popular item 2 -->
-                                <div class="popular-item">
+                                <div class="popular-item" data-aos="zoom-in">
                                     <a href="#!">
                                         <img
                                             loading="lazy"
@@ -300,7 +303,7 @@
                                 </div>
 
                                 <!-- popular item 3 -->
-                                <div class="popular-item">
+                                <div class="popular-item" data-aos="fade-left">
                                     <a href="#!">
                                         <img
                                             loading="lazy"
@@ -335,17 +338,17 @@
             <div class="subscribe">
                 <div class="content">
                     <div class="subscribe-wrap">
-                        <div class="subscribe-item">
+                        <div class="subscribe-item" data-aos="fade-right">
                             <span class="num">100+</span>
                             <span class="label ba-cham line-clamp-1">Popular Courses</span>
                         </div>
 
-                        <div class="subscribe-item">
+                        <div class="subscribe-item" data-aos="zoom-in">
                             <span class="num">500+</span>
                             <span class="label ba-cham line-clamp-1">Skilled Trainer</span>
                         </div>
 
-                        <div class="subscribe-item">
+                        <div class="subscribe-item" data-aos="fade-left">
                             <span class="num">1M+</span>
                             <span class="label ba-cham line-clamp-1">Student Learning</span>
                         </div>
@@ -358,7 +361,7 @@
                 <div class="content">
                     <div class="feedback-wrap">
                         <!-- Feedback content -->
-                        <div class="feedback-content">
+                        <div class="feedback-content" data-aos="fade-up">
                             <img loading="lazy" src="./assets/icon/feedback-icon.png" alt="" class="feedback-icon" />
                             <p class="feedback-desc ba-cham line-clamp-4">
                                 “They are the best people. And this is the suitable platform to learn from distance.”
@@ -401,7 +404,7 @@
                         </div>
 
                         <!-- Feedback media -->
-                        <div class="feedback-media">
+                        <div class="feedback-media" data-aos="fade-up">
                             <img
                                 loading="lazy"
                                 src="./assets/img/feedback-avatar-1.avif"
@@ -447,13 +450,13 @@
             <div class="get">
                 <div class="content">
                     <div class="get-wrap">
-                        <div class="get-content">
+                        <div class="get-content" data-aos="fade-right">
                             <h2 class="heading lv2 ba-cham line-clamp-1">Ready to Get Admit</h2>
                             <p class="top-desc get-desc ba-cham line-clamp-1">
                                 Create your account and Boost your Career.
                             </p>
                         </div>
-                        <a href="#!" class="btn get-btn">Get Started</a>
+                        <a href="#!" class="btn get-btn" data-aos="fade-left">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -572,5 +575,12 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                anchorPlacement: "top-bottom",
+            });
+        </script>
     </body>
 </html>
